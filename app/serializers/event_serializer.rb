@@ -1,5 +1,6 @@
 class EventSerializer < ActiveModel::Serializer
   has_many :users
+  has_many :user_events
   attributes :id, :title, :description, :location, :category, :max_capacity, :min_capacity, :date, :time, :duration, :image_url
 end
 
